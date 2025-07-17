@@ -1,19 +1,32 @@
-Assignment 1 -Task 1 
-Task 1 :TD Python program to perform basic mathematical operations on two numbers
-# Input two numbers in variables num1 and num2 respectively
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+#Assignement2-Module3-Task1
 
-# Step 2: Perform mathematical operations
-addition = num1 + num2
-subtraction = num1 - num2
-multiplication = num1 * num2
-division = num1 / num2
+# Problem Statement:  Write a Python program that:
+# 1. 	Takes an integer input from the user.
+# 2. 	Checks whether the number is even or odd using an if-else statement.
 
+# Step 1: Take integer input from the user
+number = int(input("Enter an integer: "))
 
-# Step 3: Display the results
-print("\nResults of mathematical operations:")
-print(f"Addition:", addition)
-print(f"Subtraction:", subtraction )
-print(f"Multiplication:", multiplication)
-print(f"Division:", division)
+# Step 2: Check if the number is even or odd
+if number % 2 == 0:
+    # Step 3: Display result for even number
+    print(f"The number {number} is even.")
+else:
+    # Step 3: Display result for odd number
+    print(f"The number {number} is odd.")
+
+    # Assignment2-Module3-Task2
+
+    Problem Statement: Write a Python program that:
+1.   Uses a for loop to iterate over numbers from 1 to 50.
+2.   Calculates the sum of all integers in this range.
+
+    #  Initialize the variable total_sum by 0
+total_sum = 0
+
+# Loop  from 1 to 50
+for num in range(1, 51):
+    total_sum += num  # Add each number to total_sum
+
+#  Display the final sum
+print(f"The sum of integers from 1 to 50 is: {total_sum}")
